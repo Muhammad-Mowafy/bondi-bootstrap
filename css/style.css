@@ -1,0 +1,247 @@
+/* Start Variables */
+:root {
+    --main-color   : #19283f;
+    --green-color  : #33d1cc;
+    --red-color    : #ff3150;
+    --section-color: #eff7fa;
+}
+/* End Variables */
+
+/* Start Global Edits */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: white;
+    padding: 10px 15px;
+}
+
+.main-btn:hover {
+    background-color: white;
+    color: var(--red-color);
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+}
+    /* End Global Edits */
+
+/* Start Navbar */
+.navbar {
+    background-color: var(--main-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded= "true"] {
+    border-color: var(--green-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: 2px solid var(--green-color);
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+    background-color: var(--main-color);
+    min-height: 100vh;
+}
+/* End Landing */
+
+/* Start Features */
+.feat .icon {
+    height: 200px;
+}
+
+.feat .icon svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feat .icon .number {
+    font-size: 192px;
+    color: var(--section-color);
+}
+
+.feat .icon .icon-e {
+    font-size: 80px;
+    color: var(--green-color);
+}
+/* End Features */
+
+/* Start Work */
+.work {
+    background-color: var(--section-color);
+}
+
+.work ul li.active {
+    background-color: var(--red-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.work ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.work .row .box {
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.work .row .box::before {
+    content: attr(data-work);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgba(51, 209, 204, 0.88);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+    transition: .3s;
+    transform: translatex(calc(-100% - 5px));
+}
+
+.work .row .box:hover::before {
+    transform: translatex(0);
+}
+/* End Work */
+
+/* Start About */
+.about .description {
+    max-width: 500px;
+}
+/* End About */
+
+/* Start Team */
+.team {
+    background-color: var(--section-color);
+}
+
+.team .box h4 {
+    background-color: var(--green-color);
+}
+/* End Team */
+
+/* Start Project */
+.project {
+    background-color: var(--main-color);
+}
+/* End Project */
+
+/* Start Subscribe */
+.subscribe input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="email"]:focus {
+    outline: none;
+}
+
+.subscribe ::placeholder {
+    color: white;
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+}
+/* End Subscribe */
+
+/* Start Footer */
+.footer {
+    background-color: var(--main-color);
+}
+
+.footer p {
+    line-height: 1.9;
+}
+
+.footer h6 span {
+    font-weight: bold;
+    color: var(--green-color);
+}
+
+.footer ul li {
+    margin: 10px 0;
+}
+
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
